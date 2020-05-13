@@ -43,7 +43,7 @@ def dft(graph, starting_node):
 
     s.push((starting_node, 0))
     visited = set()
-
+    ## create visited set and pairs
     visited_pairs = set()
 
     while s.size() > 0:

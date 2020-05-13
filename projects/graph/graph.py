@@ -106,7 +106,7 @@ class Graph:
                 ### and add each neighbor to the top of the stack
                 for neighbor in neighbors:
                     stack.push(neighbor)
-        return visited
+        # return visited
 
     def dft_recursive(self, starting_vertex, visited = None):
         """
@@ -180,14 +180,14 @@ class Graph:
         starting_vertex to destination_vertex in
         depth-first order.
         """
-        # create a plan_to_visit stack and add starting_vertex to it
+        # create a "plan_to_visit" stack and add starting_vertex to it
         stack = Stack()
         stack.push([starting_vertex])
 
         # create a Set for visited_vertices
         visited_vertices = set()
 
-        # while the plan_to_visit stack is not Empty:
+        # while the "plan_to_visit" stack is not Empty:
         while stack.size() > 0:
 
             # pop the first vertex from the stack
